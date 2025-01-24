@@ -2,7 +2,7 @@ import json
 from typing import Optional
 from pylon.core.tools import log
 from pylon.core.tools import web
-from pydantic import ValidationError
+from pydantic.v1 import ValidationError
 
 from ..models.integration_pd import PerformanceBackendTestModel, PerformanceUiTestModel
 

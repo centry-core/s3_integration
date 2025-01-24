@@ -1,5 +1,5 @@
 from typing import Union, Optional
-from pydantic import BaseModel, validator
+from pydantic.v1 import BaseModel, validator
 from urllib.parse import urlparse
 import boto3
 
