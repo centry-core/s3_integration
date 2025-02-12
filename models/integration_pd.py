@@ -3,13 +3,13 @@ from pydantic.v1 import BaseModel, validator
 from urllib.parse import urlparse
 import boto3
 
-from ...integrations.models.pd.integration import SecretField
 from pylon.core.tools import log
+from tools import SecretString
 
 
 class IntegrationModel(BaseModel):
     access_key: str
-    secret_access_key: Union[SecretField, str]
+    secret_access_key: Union[SecretString, str]
     region_name: str
     use_compatible_storage: bool = False
     storage_url: str = ''
